@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:background="@color/colorRed"
+        android:text="@string/questionTryAgain"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:background="@drawable/to_high_low"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+
+        <Button
+            android:text="@string/top"
+            android:textSize="20dp"
+            android:onClick="onTop"
+            android:layout_marginRight="5dp"
+            android:id="@+id/retire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:text="@string/again"
+            android:textSize="20dp"
+            android:onClick="onRetry"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/wup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+</LinearLayout>
